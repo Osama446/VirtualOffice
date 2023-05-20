@@ -98,6 +98,6 @@ easyrtc.listen(app, socketServer, null, (err, rtcRef) => {
 });
 
 // Listen on port
-webServer.listen(port, () => {
+webServer.listen(port, 0.0.0.0,() => {
     console.log("listening on http://localhost:" + port);
 });
